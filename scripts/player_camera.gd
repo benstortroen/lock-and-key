@@ -1,6 +1,6 @@
 extends Camera3D
 
-@export var camera_sensitivity := 5
+@export var camera_sensitivity := 10
 var mouse_input : Vector2 = Vector2.ZERO
 
 

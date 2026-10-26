@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://duuraib7riiu7"]
+
+[ext_resource type="Material" uid="uid://bt680aahwq02t" path="res://materials/wood_2.tres" id="1_uvdjg"]
+[ext_resource type="Material" uid="uid://kbv8qm7piecy" path="res://materials/wood_1.tres" id="2_83dcw"]
+[ext_resource type="Material" uid="uid://ckyei4n5wxkfx" path="res://materials/gold.tres" id="3_83dcw"]
+[ext_resource type="Material" uid="uid://cca0e6nwsuvwr" path="res://materials/black.tres" id="4_la1wf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_hun61"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_la1wf"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_18pbm"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_q5w8r"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_t58dd"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uvdjg"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_la1wf"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_18pbm"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_q5w8r"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_18pbm"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_q5w8r"]
+
+[sub_resource type="Animation" id="Animation_la1wf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hinge:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_18pbm"]
+resource_name = "door_open"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hinge:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 2.268928, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q5w8r"]
+_data = {
+&"RESET": SubResource("Animation_la1wf"),
+&"door_open": SubResource("Animation_18pbm")
+}
+
+[node name="Door" type="Node3D" unique_id=588366886]
+
+[node name="Frame" type="Node3D" parent="." unique_id=1698470829]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Frame" unique_id=342000831]
+transform = Transform3D(0.106, 0, 0, 0, 2, 0, 0, 0, 0.15, -0.5, 0, 0)
+material_override = ExtResource("2_83dcw")
+mesh = SubResource("BoxMesh_hun61")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Frame/MeshInstance3D2" unique_id=1262966916]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Frame/MeshInstance3D2/StaticBody3D" unique_id=1369914367]
+shape = SubResource("ConcavePolygonShape3D_la1wf")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Frame" unique_id=1820464721]
+transform = Transform3D(0.106, 0, 0, 0, 2, 0, 0, 0, 0.15, 0.5, 0, 0)
+material_override = ExtResource("2_83dcw")
+mesh = SubResource("BoxMesh_hun61")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Frame/MeshInstance3D3" unique_id=241617813]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Frame/MeshInstance3D3/StaticBody3D" unique_id=1222823774]
+shape = SubResource("ConcavePolygonShape3D_18pbm")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Frame" unique_id=1126845634]
+transform = Transform3D(1.1, 0, 0, 0, 0.1, 0, 0, 0, 0.15, 0, 1, 0)
+material_override = ExtResource("2_83dcw")
+mesh = SubResource("BoxMesh_hun61")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Frame/MeshInstance3D4" unique_id=1420032691]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Frame/MeshInstance3D4/StaticBody3D" unique_id=1429925122]
+shape = SubResource("ConcavePolygonShape3D_q5w8r")
+
+[node name="Hinge" type="Node3D" parent="." unique_id=1572860602]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -0.5, 0, 0)
+
+[node name="DoorPanel" type="Node3D" parent="Hinge" unique_id=362659113]
+
+[node name="DoorMesh" type="MeshInstance3D" parent="Hinge/DoorPanel" unique_id=1259687077]
+transform = Transform3D(0.9121956, 0, 0, 0, 1.9057524, 0, 0, 0, 0.100000046, 0.509773, 0, 0)
+material_override = ExtResource("1_uvdjg")
+mesh = SubResource("BoxMesh_hun61")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hinge/DoorPanel/DoorMesh" unique_id=755253461]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hinge/DoorPanel/DoorMesh/StaticBody3D" unique_id=1519645459]
+shape = SubResource("ConcavePolygonShape3D_t58dd")
+
+[node name="Knob" type="Node3D" parent="Hinge/DoorPanel" unique_id=460789494]
+
+[node name="MetalPlate" type="MeshInstance3D" parent="Hinge/DoorPanel/Knob" unique_id=488090585]
+transform = Transform3D(0.15576899, 0, 0, 0, 0.31584325, 0, 0, 0, 0.15576899, 0.7871032, -0.11136596, 0)
+material_override = ExtResource("3_83dcw")
+mesh = SubResource("BoxMesh_uvdjg")
+
+[node name="MetalPlate2" type="MeshInstance3D" parent="Hinge/DoorPanel/Knob" unique_id=1287350760]
+transform = Transform3D(0.036696326, 0, 0, 0, -5.6986567e-09, -0.035776332, 0, 0.13037002, -1.5638333e-09, 0.7871032, -0.048252214, 0)
+material_override = ExtResource("3_83dcw")
+mesh = SubResource("CylinderMesh_la1wf")
+
+[node name="MetalPlate3" type="MeshInstance3D" parent="Hinge/DoorPanel/Knob" unique_id=1157687288]
+transform = Transform3D(0.09768169, 0, 0, 0, 0.101685874, 0, 0, 0, 0.08043682, 0.7871032, -0.048252217, 0.15201169)
+material_override = ExtResource("3_83dcw")
+mesh = SubResource("SphereMesh_18pbm")
+
+[node name="MetalPlate4" type="MeshInstance3D" parent="Hinge/DoorPanel/Knob" unique_id=1725842860]
+transform = Transform3D(0.097681694, 0, 0, 0, 0.10168588, 0, 0, 0, 0.08043682, 0.7871032, -0.04825222, -0.1603497)
+material_override = ExtResource("3_83dcw")
+mesh = SubResource("SphereMesh_q5w8r")
+
+[node name="KeyHole" type="MeshInstance3D" parent="Hinge/DoorPanel/Knob" unique_id=1796653657]
+transform = Transform3D(0.03649922, 0, 0, 0, 0.06366907, 0, 0, 0, 0.16168138, 0.7871032, -0.20138602, 0)
+material_override = ExtResource("4_la1wf")
+mesh = SubResource("PrismMesh_18pbm")
+
+[node name="KeyHole2" type="MeshInstance3D" parent="Hinge/DoorPanel/Knob" unique_id=1080815753]
+transform = Transform3D(0.02623764, 0, 0, 0, -3.5358423e-09, -0.03107193, 0, 0.08089062, -1.3581971e-09, 0.7871032, -0.17836635, 0)
+material_override = ExtResource("4_la1wf")
+mesh = SubResource("CylinderMesh_q5w8r")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1265134416]
+libraries/ = SubResource("AnimationLibrary_q5w8r")

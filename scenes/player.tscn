@@ -4,8 +4,10 @@
 [ext_resource type="Script" uid="uid://1c2wfntv0cf4" path="res://scripts/player_camera.gd" id="2_qhqgy"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_sh265"]
+radius = 0.4
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4flbx"]
+radius = 0.4
 
 [node name="Player" type="CharacterBody3D" unique_id=1688729472 groups=["Player"]]
 script = ExtResource("1_g2els")

@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://kbv8qm7piecy"]
+
+[ext_resource type="Texture2D" uid="uid://bsnspe8yjugbc" path="res://materials/wood_normal_2.png" id="1_v10rq"]
+
+[resource]
+albedo_color = Color(0.64529705, 0.25030932, 0.06100855, 1)
+roughness = 0.95
+normal_enabled = true
+normal_texture = ExtResource("1_v10rq")
+subsurf_scatter_strength = 1.0
+uv1_triplanar = true
+uv1_world_triplanar = true
