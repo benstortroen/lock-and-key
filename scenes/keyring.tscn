@@ -1,12 +1,10 @@
 [gd_scene format=3 uid="uid://c8p6ea67lxsv2"]
 
-[ext_resource type="PackedScene" uid="uid://w8nupxa2diqc" path="res://scenes/attached_key.tscn" id="1_uy4su"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uy4su"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n2tm1"]
 albedo_color = Color(0.96139616, 0.56346667, 0.65064174, 1)
 
 [sub_resource type="SphereMesh" id="SphereMesh_axxyj"]
-material = SubResource("StandardMaterial3D_uy4su")
+material = SubResource("StandardMaterial3D_n2tm1")
 radial_segments = 4
 rings = 1
 
@@ -26,6 +24,3 @@ collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=2092867086]
 shape = SubResource("ConcavePolygonShape3D_uy4su")
-
-[node name="AttachedKey" parent="." unique_id=952204627 instance=ExtResource("1_uy4su")]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, -1.7763568e-15, 0, 1.7763568e-15, 0.25, 0, 4.1633363e-16, -0.0034229085)

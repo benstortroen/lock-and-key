@@ -1,7 +1,7 @@
 extends Node3D
 #  Manage keyring equip state and unlock minigame
 
-
+var has_keyring = false
 var is_equipped = false
 var in_minigame = false
 
@@ -16,7 +16,7 @@ var reset_cam_rotation = Vector3.ZERO
 
 func _process(delta):
 	# Toggle keyring equip
-	if Input.is_action_just_pressed("toggle_keyring"):
+	if has_keyring and Input.is_action_just_pressed("toggle_keyring"):
 		is_equipped = !is_equipped
 		print("Is Equipped: " + str (is_equipped) + " " + Time.get_time_string_from_system())
 		keyring_rig.play_equip_anim(is_equipped)
@@ -80,6 +80,9 @@ func end_minigame():
 	
 # ==============================================================================
 # Handle Item Pickups
+
+func add_keyring():
+	has_keyring = true
 
 func add_key():
 	var keyring = keyring_rig.get_node("Keyring")
