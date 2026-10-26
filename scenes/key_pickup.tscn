@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cp6qh23kwg307"]
+
+[ext_resource type="Script" uid="uid://di2cdfhta4jvh" path="res://key_pickup.gd" id="1_qt5rs"]
+[ext_resource type="Material" uid="uid://ckyei4n5wxkfx" path="res://materials/gold.tres" id="2_xhu78"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wy8tx"]
+size = Vector3(0.1059618, 0.31658936, 0.027496338)
+
+[sub_resource type="TorusMesh" id="TorusMesh_uvrdt"]
+inner_radius = 0.4
+outer_radius = 0.6
+
+[sub_resource type="BoxMesh" id="BoxMesh_q6jxy"]
+
+[node name="KeyPickup" type="Area3D" unique_id=984102319 groups=["interactable"]]
+script = ExtResource("1_qt5rs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2120776747 groups=["interactable"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0009856224, -0.102508545, -1.5258789e-05)
+shape = SubResource("BoxShape3D_wy8tx")
+
+[node name="KeyMesh" type="Node3D" parent="." unique_id=1794988356]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="KeyMesh" unique_id=1738991156]
+transform = Transform3D(0.1, 0, 0, 0, -8.742278e-09, -0.1, 0, 0.2, -4.371139e-09, 0, 0, 0)
+material_override = ExtResource("2_xhu78")
+mesh = SubResource("TorusMesh_uvrdt")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="KeyMesh" unique_id=1710530861]
+transform = Transform3D(0.017996708, 0, 0, 0, -7.3397977e-10, -0.211132, 0, 0.016791498, -9.228874e-09, 0, -0.15788992, 0)
+material_override = ExtResource("2_xhu78")
+mesh = SubResource("BoxMesh_q6jxy")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="KeyMesh" unique_id=1313847053]
+transform = Transform3D(0.070575334, 0, 0, 0, -7.339797e-10, -0.0396317, 0, 0.016791496, -1.7323567e-09, 0.028312918, -0.24534109, 0)
+material_override = ExtResource("2_xhu78")
+mesh = SubResource("BoxMesh_q6jxy")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="KeyMesh" unique_id=195385021]
+transform = Transform3D(0.04803225, 0, 0, 0, -7.339797e-10, -0.0396317, 0, 0.016791496, -1.7323567e-09, 0.015822168, -0.19028543, 0)
+material_override = ExtResource("2_xhu78")
+mesh = SubResource("BoxMesh_q6jxy")
+
+[connection signal="interact" from="." to="." method="_on_interact"]

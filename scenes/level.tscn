@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://xxxa0uur8iil" path="res://scenes/player.tscn" id="1_u52ul"]
 [ext_resource type="Texture2D" uid="uid://brap4n7muse73" path="res://assets/material.png" id="2_w7c3h"]
 [ext_resource type="PackedScene" uid="uid://duuraib7riiu7" path="res://scenes/door.tscn" id="3_w8frs"]
+[ext_resource type="PackedScene" uid="uid://cp6qh23kwg307" path="res://scenes/key_pickup.tscn" id="4_mx8sn"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5xgho"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -56,3 +57,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0327214, 0.9891261, -4.303
 
 [node name="Door2" parent="." unique_id=586212833 instance=ExtResource("3_w8frs")]
 transform = Transform3D(-0.50000006, 0, -0.86602545, 0, 1, 0, 0.86602545, 0, -0.50000006, 4.4028864, 0.9891256, 7.197511)
+
+[node name="KeyPickup" parent="." unique_id=984102319 instance=ExtResource("4_mx8sn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9276085, 0.26515695, -0.84283006)

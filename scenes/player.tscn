@@ -19,8 +19,8 @@ tracks/0/path = NodePath("Keyring:position:x")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0.4370603, -0.25, 0, 0.25, 0),
+"handle_modes": PackedInt32Array(2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/1/type = "bezier"
@@ -30,8 +30,8 @@ tracks/1/path = NodePath("Keyring:position:y")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-0.30414185, -0.25, 0, 0.25, 0),
+"handle_modes": PackedInt32Array(2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/2/type = "bezier"
@@ -41,8 +41,8 @@ tracks/2/path = NodePath("Keyring:position:z")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-0.7558173, -0.25, 0, 0.25, 0),
+"handle_modes": PackedInt32Array(2),
+"points": PackedFloat32Array(0.27745837, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 
@@ -160,7 +160,7 @@ crosshair_grab = ExtResource("5_qlg0r")
 script = ExtResource("6_fjrip")
 
 [node name="Keyring" parent="Camera3D/KeyringRig" unique_id=765679610 instance=ExtResource("6_tuyoq")]
-transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.4370603, -0.30414185, -0.7558173)
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0, 0.27745837)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Camera3D/KeyringRig" unique_id=1618606564]
 libraries/ = SubResource("AnimationLibrary_ur7pv")

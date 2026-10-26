@@ -9,7 +9,7 @@ func _process(delta: float) -> void:
 	var collision = get_collider()
 	
 	# Check if object can be interacted with
-	if is_colliding() and collision.is_in_group("interactable"):
+	if collision and collision.is_in_group("interactable"):
 		
 		# Set cross hair to grab
 		CrosshairTexture.texture = crosshair_grab

@@ -79,6 +79,14 @@ func end_minigame():
 	tween.tween_property(camera, "position", reset_cam_pos, 0.5).set_trans(Tween.TRANS_CIRC)
 	
 # ==============================================================================
+# Handle Item Pickups
+
+func add_key():
+	var keyring = keyring_rig.get_node("Keyring")
+	var key_instance = preload("res://scenes/attached_key.tscn").instantiate() 
+	keyring.add_child(key_instance)
+	
+# ==============================================================================
 # Key Drag Functions
 
 var is_key_grabbed = false
@@ -112,6 +120,7 @@ func drag_to_mouse(delta):
 		align_key_to_knob()
 		
 func unlock_anim(key_marker: Marker3D):
+	# TODO: prevent early unequip which causes crash
 	var unlocking_key = key_grabbed
 	unlocking_key.freeze = true
 	unequip_key()
