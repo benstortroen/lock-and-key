@@ -53,3 +53,6 @@ shape = SubResource("ConcavePolygonShape3D_2q6dc")
 
 [node name="Door" parent="." unique_id=588366886 instance=ExtResource("3_w8frs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0327214, 0.9891261, -4.3031735)
+
+[node name="Door2" parent="." unique_id=586212833 instance=ExtResource("3_w8frs")]
+transform = Transform3D(-0.50000006, 0, -0.86602545, 0, 1, 0, 0.86602545, 0, -0.50000006, 4.4028864, 0.9891256, 7.197511)

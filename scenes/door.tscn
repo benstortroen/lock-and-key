@@ -6,6 +6,7 @@
 [ext_resource type="Material" uid="uid://ckyei4n5wxkfx" path="res://materials/gold.tres" id="3_83dcw"]
 [ext_resource type="AudioStream" uid="uid://dlxed2jh0ckl" path="res://audio/door_locked.mp3" id="4_kgbum"]
 [ext_resource type="Material" uid="uid://cca0e6nwsuvwr" path="res://materials/black.tres" id="4_la1wf"]
+[ext_resource type="AudioStream" uid="uid://dn685tmoqbvs1" path="res://audio/door_unlock.mp3" id="5_ey00f"]
 [ext_resource type="Script" uid="uid://b4arsg0ljfn8m" path="res://scripts/door_interact_signal.gd" id="6_q5w8r"]
 [ext_resource type="AudioStream" uid="uid://dyjfw1skbd3s" path="res://audio/door_open.wav" id="7_t58dd"]
 [ext_resource type="AudioStream" uid="uid://bjeihtj77b7dy" path="res://audio/door_close.mp3" id="8_ju5n0"]
@@ -38,6 +39,9 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_la1wf"]
 size = Vector3(0.2084961, 0.40386963, 0.38467407)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kgbum"]
+size = Vector3(0.2084961, 0.19070435, 0.20059967)
 
 [sub_resource type="Animation" id="Animation_la1wf"]
 length = 0.001
@@ -118,12 +122,15 @@ _data = {
 &"door_open": SubResource("Animation_18pbm")
 }
 
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_kgbum"]
+
 [node name="Door" type="Node3D" unique_id=588366886]
 script = ExtResource("1_18pbm")
 sounds = Dictionary[StringName, AudioStream]({
 &"door_close": ExtResource("8_ju5n0"),
 &"door_locked": ExtResource("4_kgbum"),
-&"door_open": ExtResource("7_t58dd")
+&"door_open": ExtResource("7_t58dd"),
+&"door_unlock": ExtResource("5_ey00f")
 })
 
 [node name="Frame" type="Node3D" parent="." unique_id=1698470829]
@@ -213,6 +220,13 @@ script = ExtResource("6_q5w8r")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016357422, -0.081695646, -0.019912736)
 shape = SubResource("BoxShape3D_la1wf")
 
+[node name="UnlockTrigger" type="Area3D" parent="Hinge/DoorPanel/Knob" unique_id=1549570123]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.769575, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hinge/DoorPanel/Knob/UnlockTrigger" unique_id=1389843929]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016357422, -0.18827829, 0.03689192)
+shape = SubResource("BoxShape3D_kgbum")
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1265134416]
 libraries/ = SubResource("AnimationLibrary_q5w8r")
 
@@ -225,4 +239,20 @@ transform = Transform3D(0.42100942, 0.0695556, -0.90438545, 0, 0.99705553, 0.076
 [node name="KeyringMarker" type="Marker3D" parent="." unique_id=1653551305]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28710306, -0.04825221, 0.57437015)
 
+[node name="KnobMarker" type="Marker3D" parent="." unique_id=1907582914]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28710306, -0.20626691, -0.076607645)
+
+[node name="KeyMarker" type="Marker3D" parent="." unique_id=598355170]
+transform = Transform3D(2.9802322e-08, 0, -1.0000001, -1.0000001, -4.371139e-08, -2.9802322e-08, -4.3711392e-08, 1, -1.3027009e-15, 0.28710306, -0.17548291, 0.16406953)
+
+[node name="MousePlane" type="Area3D" parent="." unique_id=1491239892]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.30161548, -0.04825221, 0.57437015)
+collision_layer = 5
+collision_mask = 5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MousePlane" unique_id=1381915958]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_kgbum")
+
 [connection signal="interact" from="Hinge/DoorPanel/Knob/KnobTrigger" to="." method="_on_knob_trigger_interact"]
+[connection signal="area_entered" from="Hinge/DoorPanel/Knob/UnlockTrigger" to="." method="_on_unlock_trigger_area_entered"]

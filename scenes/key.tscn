@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c86aa8klj5idg"]
 
-[ext_resource type="Script" uid="uid://bd27qw83ry66v" path="res://scenes/key.gd" id="1_fttkb"]
+[ext_resource type="Script" uid="uid://bd27qw83ry66v" path="res://scripts/key.gd" id="1_fttkb"]
 [ext_resource type="Material" uid="uid://ckyei4n5wxkfx" path="res://materials/gold.tres" id="1_q6jxy"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yk2u2"]
@@ -36,7 +36,7 @@ outer_radius = 0.6
 [sub_resource type="BoxShape3D" id="BoxShape3D_fttkb"]
 size = Vector3(0.08282471, 0.10241699, 0.050231934)
 
-[node name="Key" type="RigidBody3D" unique_id=525435798]
+[node name="Key" type="RigidBody3D" unique_id=525435798 groups=["key"]]
 collision_layer = 2
 collision_mask = 2
 center_of_mass_mode = 1
@@ -97,7 +97,7 @@ transform = Transform3D(0.04803225, 0, 0, 0, -7.339797e-10, -0.0396317, 0, 0.016
 material_override = ExtResource("1_q6jxy")
 mesh = SubResource("BoxMesh_q6jxy")
 
-[node name="UnlockTrigger" type="Area3D" parent="." unique_id=315926925]
+[node name="UnlockTrigger" type="Area3D" parent="." unique_id=315926925 groups=["key"]]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="UnlockTrigger" unique_id=10840684]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.030853271, -0.21612549, 0.021636963)

@@ -36,3 +36,25 @@ func handle_camera(delta):
 	rotation_degrees.y = fmod(rotation_degrees.y + look_input.x, 360.0)
 	# Reset mouse_input (necessary or else your mouse will feel like it's sliding)
 	mouse_input = Vector2.ZERO
+	
+func raycast_from_mouse(collide_with_bodies = true):
+	var ray_length = 1000
+	var space_state = get_world_3d().direct_space_state
+	var mouse_position = get_viewport().get_mouse_position()
+	# calculate ray start and end positions
+	var from = project_ray_origin(mouse_position)
+	var to = from + project_ray_normal(mouse_position) * ray_length
+	# build raycast and interact with physics world
+	var query = PhysicsRayQueryParameters3D.create(from, to)
+	
+	# set custom raycast information
+	query.collide_with_areas = !collide_with_bodies
+	query.collide_with_bodies = collide_with_bodies
+	
+	# only raycast with door knob plane
+	if query.collide_with_areas:
+		query.collision_mask = 4
+	
+	# extract result from raycast
+	var result = space_state.intersect_ray(query)
+	return result
