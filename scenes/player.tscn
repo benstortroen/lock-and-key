@@ -2,10 +2,130 @@
 
 [ext_resource type="Script" uid="uid://bpvye2g4rqsim" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Script" uid="uid://1c2wfntv0cf4" path="res://scripts/player_camera.gd" id="2_qhqgy"]
+[ext_resource type="Script" uid="uid://bf6aixfg1krbo" path="res://scenes/key_manager.gd" id="2_ur7pv"]
 [ext_resource type="Script" uid="uid://ubmn6c74qyp4" path="res://scripts/player_raycast.gd" id="3_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://bsc05mmaaf2lg" path="res://assets/crosshair_default.png" id="4_dqkch"]
 [ext_resource type="Texture2D" uid="uid://8g0phf1qery4" path="res://assets/crosshair_grab.png" id="5_qlg0r"]
-[ext_resource type="PackedScene" uid="uid://c8p6ea67lxsv2" path="res://scenes/keyring_rig.tscn" id="6_tuyoq"]
+[ext_resource type="Script" uid="uid://63rul0kxtxkb" path="res://scripts/keyring_rig.gd" id="6_fjrip"]
+[ext_resource type="PackedScene" uid="uid://c8p6ea67lxsv2" path="res://scenes/keyring.tscn" id="6_tuyoq"]
+[ext_resource type="AudioStream" uid="uid://b57by8ddqc62e" path="res://audio/key_jingle_1.mp3" id="8_smehm"]
+
+[sub_resource type="Animation" id="Animation_fjrip"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Keyring:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.4370603, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Keyring:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-0.30414185, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Keyring:position:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-0.7558173, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_smehm"]
+resource_name = "equip_keyring"
+length = 0.36666667
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Keyring:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.061111115, 0.07284339, 0.4370603, -0.3333333, 0.70930356, 0.23044175, -0.4903595),
+"times": PackedFloat32Array(0, 0.36666667)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Keyring:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(-0.64, 0, 0, 0.061111115, 0.055976357, -0.30414185, -0.23333333, 0.32699484, 0.25, 0),
+"times": PackedFloat32Array(0, 0.36666667)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Keyring:position:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.061111115, -0.12596956, -0.7558173, -0.26666668, -0.23145878, 0.25, 0),
+"times": PackedFloat32Array(0, 0.36666667)
+}
+
+[sub_resource type="Animation" id="Animation_ur7pv"]
+resource_name = "unequip_keyring"
+length = 0.36666667
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Keyring:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0.4370603, -0.3333333, 0.70930356, 0.23044175, -0.4903595, 1.1979011, 0, 0, 0.061111115, 0.07284339),
+"times": PackedFloat32Array(0, 0.9)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Keyring:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-0.30414185, -0.23333333, 0.32699484, 0.25, 0, -0.64, 0, 0, 0.061111115, 0.055976357),
+"times": PackedFloat32Array(0, 0.36666667)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Keyring:position:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-0.7558173, -0.26666668, -0.23145878, 0.25, 0, 0, 0, 0, 0.061111115, -0.12596956),
+"times": PackedFloat32Array(0, 0.36666667)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ur7pv"]
+_data = {
+&"RESET": SubResource("Animation_fjrip"),
+&"equip_keyring": SubResource("Animation_smehm"),
+&"unequip_keyring": SubResource("Animation_ur7pv")
+}
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_sh265"]
 radius = 0.4
@@ -18,7 +138,11 @@ height = 1.8
 [node name="Player" type="CharacterBody3D" unique_id=1688729472 groups=["player"]]
 script = ExtResource("1_g2els")
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1959717339]
+[node name="KeyManager" type="Node3D" parent="." unique_id=555193062 node_paths=PackedStringArray("keyring_rig")]
+script = ExtResource("2_ur7pv")
+keyring_rig = NodePath("../Camera3D/KeyringRig")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1959717339 groups=["camera"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 script = ExtResource("2_qhqgy")
 
@@ -31,15 +155,20 @@ CrosshairTexture = NodePath("../../CenterContainer/CrosshairTexture")
 crosshair_default = ExtResource("4_dqkch")
 crosshair_grab = ExtResource("5_qlg0r")
 
-[node name="MarkerEquip" type="Marker3D" parent="Camera3D" unique_id=852372598]
-transform = Transform3D(-0.27909154, -0.866164, -0.41456905, -1.3519622e-08, 0.4317237, -0.90200585, 0.9602646, -0.25174212, -0.12049046, 0.4370603, -0.30414185, -0.7558173)
+[node name="KeyringRig" type="Node3D" parent="Camera3D" unique_id=442760306]
+script = ExtResource("6_fjrip")
 
-[node name="MarkerUnequip" type="Marker3D" parent="Camera3D" unique_id=1314631495]
-
-[node name="KeyringRig" parent="Camera3D" unique_id=765679610 instance=ExtResource("6_tuyoq")]
+[node name="Keyring" parent="Camera3D/KeyringRig" unique_id=765679610 instance=ExtResource("6_tuyoq")]
 transform = Transform3D(-0.27909154, -0.8661642, -0.4145691, -1.3519622e-08, 0.4317238, -0.902006, 0.9602646, -0.25174218, -0.12049048, 0.4370603, -0.30414185, -0.7558173)
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera3D/KeyringRig" unique_id=1618606564]
+libraries/ = SubResource("AnimationLibrary_ur7pv")
+
+[node name="KeyringEquipSFX" type="AudioStreamPlayer3D" parent="Camera3D/KeyringRig" unique_id=2126700759]
+stream = ExtResource("8_smehm")
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=956733419]
+visible = false
 mesh = SubResource("CapsuleMesh_sh265")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1286907058]

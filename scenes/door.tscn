@@ -219,4 +219,10 @@ libraries/ = SubResource("AnimationLibrary_q5w8r")
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=642714018]
 stream = ExtResource("7_t58dd")
 
+[node name="CameraMarker" type="Marker3D" parent="." unique_id=492505630]
+transform = Transform3D(0.42100942, 0.0695556, -0.90438545, 0, 0.99705553, 0.07668278, 0.9070563, -0.032284174, 0.41976976, -0.2501749, -0.018066209, 0.7045134)
+
+[node name="KeyringMarker" type="Marker3D" parent="." unique_id=1653551305]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28710306, -0.04825221, 0.57437015)
+
 [connection signal="interact" from="Hinge/DoorPanel/Knob/KnobTrigger" to="." method="_on_knob_trigger_interact"]

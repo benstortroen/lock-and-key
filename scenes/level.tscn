@@ -44,6 +44,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 45.97599, 0, 0, -35.352535)
 material_override = SubResource("StandardMaterial3D_w8frs")
 mesh = SubResource("PlaneMesh_5xgho")
+metadata/_edit_lock_ = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="GroundMesh" unique_id=1602266088]
 

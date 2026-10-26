@@ -1,18 +1,31 @@
 extends Node3D
 
 var is_open = false
-var is_unlocked = false
+@export var is_unlocked = false
 
+# animations and sounds
 @onready var anim_player = $AnimationPlayer 
 @onready var audio_player = $AudioStreamPlayer3D
 @export var sounds: Dictionary[StringName, AudioStream]
 
+# unlock minigame
+@onready var camera_marker = $CameraMarker
+@onready var keyring_marker = $KeyringMarker
+
 	
 func _on_knob_trigger_interact() -> void:
-	if !is_unlocked:
+	var player = get_tree().get_first_node_in_group("player")
+	var key_manager = player.get_node("KeyManager")
+	var is_equipped = key_manager.is_equipped
+	
+	# Door locked, don't budge
+	if !is_unlocked and !is_equipped:
 		anim_player.play("door_locked")
 		audio_player.stream = sounds["door_locked"]
 		audio_player.play()
+	# Door locked, start unlock minigame
+	elif !is_unlocked and is_equipped:
+		key_manager.start_minigame(camera_marker, keyring_marker)
 	
 	elif is_open:
 		anim_player.play("door_close")

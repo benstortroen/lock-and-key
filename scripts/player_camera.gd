@@ -25,13 +25,6 @@ func _physics_process(delta: float) -> void:
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		mouse_input = event.relative
-	# Unlock mouse to window
-	elif event.is_action_pressed("ui_cancel"):
-		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-	# Lock mouse to window
-	elif event.is_action_pressed("interact"):
-		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-
 	
 # handle camera rotation with input event (Mouse)
 func handle_camera(delta):
@@ -40,6 +33,6 @@ func handle_camera(delta):
 	# Rotate camera based on look_input vector
 	rotation_degrees.x += look_input.y
 	rotation_degrees.x = clampf(rotation_degrees.x, -90, 90)
-	rotation_degrees.y += look_input.x
+	rotation_degrees.y = fmod(rotation_degrees.y + look_input.x, 360.0)
 	# Reset mouse_input (necessary or else your mouse will feel like it's sliding)
 	mouse_input = Vector2.ZERO
