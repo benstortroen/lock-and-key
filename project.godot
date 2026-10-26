@@ -15,6 +15,10 @@ run/main_scene="uid://f641c4nj446q"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://cyhhommxcmaba"
 
+[global_group]
+
+interactable=""
+
 [input]
 
 move_forward={
