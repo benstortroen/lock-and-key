@@ -46,7 +46,7 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_50fbu"]
-size = Vector3(0.2084961, 0.40386963, 0.38467407)
+size = Vector3(1.095581, 1.9749908, 0.38467407)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0fmhk"]
 size = Vector3(0.2084961, 0.19070435, 0.20059967)
@@ -331,9 +331,11 @@ material_override = ExtResource("4_olg7q")
 shape = SubResource("ConcavePolygonShape3D_gur6y")
 
 [node name="CollisionShape3D" parent="Environment/Doors/Door4/Hinge/Panel/Knob/KnobTrigger" parent_id_path=PackedInt32Array(1966893436, 797650364) index="0" unique_id=2075760227]
+transform = Transform3D(1, 0, 6.5725203e-13, 0, 0.9999862, 0, -1.6484591e-12, 0, 0.9999862, -0.28723145, 0.035264313, -0.01991272)
 shape = SubResource("BoxShape3D_50fbu")
 
 [node name="CollisionShape3D" parent="Environment/Doors/Door4/Hinge/Panel/Knob/UnlockTrigger" parent_id_path=PackedInt32Array(1966893436, 1549570123) index="0" unique_id=1389843929]
+transform = Transform3D(1, 0, 3.2684966e-13, 0, 0.99999315, 0, -8.1712415e-13, 0, 0.99999315, 0.016357422, -0.18827826, 0.036891937)
 shape = SubResource("BoxShape3D_0fmhk")
 
 [node name="MetalPlate" parent="Environment/Doors/Door4/Hinge/Panel/Knob/KnobMesh" parent_id_path=PackedInt32Array(1966893436, 1570644424) index="0" unique_id=488090585]

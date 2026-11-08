@@ -102,7 +102,7 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_la1wf"]
-size = Vector3(0.2084961, 0.40386963, 0.38467407)
+size = Vector3(0.93200684, 1.8748322, 0.38467407)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kgbum"]
 size = Vector3(0.2084961, 0.19070435, 0.20059967)
@@ -183,7 +183,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.769575, 0, 0)
 script = ExtResource("6_q5w8r")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hinge/Panel/Knob/KnobTrigger" unique_id=2075760227]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016357422, -0.081695646, -0.019912736)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2695923, 0.03838337, -0.019912736)
 shape = SubResource("BoxShape3D_la1wf")
 
 [node name="UnlockTrigger" type="Area3D" parent="Hinge/Panel/Knob" unique_id=1549570123]
