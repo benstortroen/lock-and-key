@@ -7,3 +7,6 @@ a regular item use in a menu. You will fumble through your keys like a campy
 horror movie character being chased in a haunted mansion. My game's
 iteraction mechanic opens up doors for puzzles with an emphasis on perspective, 
 orientation, and quick thinking.  
+
+# Godot Version
+4.7.2.stable
