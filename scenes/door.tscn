@@ -249,8 +249,8 @@ transform = Transform3D(2.9802322e-08, 0, -1.0000001, -1.0000001, -4.371139e-08,
 
 [node name="MousePlane" type="Area3D" parent="." unique_id=1491239892]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.30161548, -0.04825221, 0.57437015)
-collision_layer = 5
-collision_mask = 5
+collision_layer = 4
+collision_mask = 4
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MousePlane" unique_id=1381915958]
 transform = Transform3D(-4.371139e-09, -0.1, 0, 0.1, -4.371139e-09, 0, 0, 0, 0.1, 0, 0, 0)

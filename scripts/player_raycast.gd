@@ -8,6 +8,9 @@ extends RayCast3D
 func _process(delta: float) -> void:
 	var collision = get_collider()
 	
+	if collision:
+		print(collision.to_string())
+	
 	# Check if object can be interacted with
 	if collision and collision.is_in_group("interactable"):
 		
