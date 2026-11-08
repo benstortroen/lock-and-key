@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cc7ixbni8o01y"]
+
+[ext_resource type="PackedScene" uid="uid://ddvtof04y4ode" path="res://models/Square Tea Table Friendly Welcome/SquareTeaTableFriendlyWelcome.fbx" id="1_02ppr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i3nyy"]
+size = Vector3(1.1933289, 0.7512512, 1.1973267)
+
+[node name="Table" unique_id=2145906330 instance=ExtResource("1_02ppr")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=1080057073]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1724674247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000869751, 0.4006195, -0.0018615723)
+shape = SubResource("BoxShape3D_i3nyy")

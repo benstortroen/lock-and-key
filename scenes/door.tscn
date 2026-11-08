@@ -11,38 +11,6 @@
 [ext_resource type="AudioStream" uid="uid://dyjfw1skbd3s" path="res://audio/door_open.wav" id="7_t58dd"]
 [ext_resource type="AudioStream" uid="uid://bjeihtj77b7dy" path="res://audio/door_close.mp3" id="8_ju5n0"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_hun61"]
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_la1wf"]
-data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_18pbm"]
-data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_q5w8r"]
-data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_t58dd"]
-data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
-
-[sub_resource type="BoxMesh" id="BoxMesh_uvdjg"]
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_la1wf"]
-
-[sub_resource type="SphereMesh" id="SphereMesh_18pbm"]
-
-[sub_resource type="SphereMesh" id="SphereMesh_q5w8r"]
-
-[sub_resource type="PrismMesh" id="PrismMesh_18pbm"]
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_q5w8r"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_la1wf"]
-size = Vector3(0.2084961, 0.40386963, 0.38467407)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_kgbum"]
-size = Vector3(0.2084961, 0.19070435, 0.20059967)
-
 [sub_resource type="Animation" id="Animation_la1wf"]
 length = 0.001
 tracks/0/type = "bezier"
@@ -122,6 +90,38 @@ _data = {
 &"door_open": SubResource("Animation_18pbm")
 }
 
+[sub_resource type="BoxMesh" id="BoxMesh_hun61"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_la1wf"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_18pbm"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_q5w8r"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_la1wf"]
+size = Vector3(0.2084961, 0.40386963, 0.38467407)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kgbum"]
+size = Vector3(0.2084961, 0.19070435, 0.20059967)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uvdjg"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_la1wf"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_18pbm"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_q5w8r"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_18pbm"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_q5w8r"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_t58dd"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_kgbum"]
 
 [node name="Door" type="Node3D" unique_id=588366886]
@@ -133,105 +133,107 @@ sounds = Dictionary[StringName, AudioStream]({
 &"door_unlock": ExtResource("5_ey00f")
 })
 
-[node name="Frame" type="Node3D" parent="." unique_id=1698470829]
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Frame" unique_id=342000831]
-transform = Transform3D(0.106, 0, 0, 0, 2, 0, 0, 0, 0.15, -0.5, 0, 0)
-material_override = ExtResource("2_83dcw")
-mesh = SubResource("BoxMesh_hun61")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Frame/MeshInstance3D2" unique_id=1262966916]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Frame/MeshInstance3D2/StaticBody3D" unique_id=1369914367]
-shape = SubResource("ConcavePolygonShape3D_la1wf")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Frame" unique_id=1820464721]
-transform = Transform3D(0.106, 0, 0, 0, 2, 0, 0, 0, 0.15, 0.5, 0, 0)
-material_override = ExtResource("2_83dcw")
-mesh = SubResource("BoxMesh_hun61")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Frame/MeshInstance3D3" unique_id=241617813]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Frame/MeshInstance3D3/StaticBody3D" unique_id=1222823774]
-shape = SubResource("ConcavePolygonShape3D_18pbm")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Frame" unique_id=1126845634]
-transform = Transform3D(1.1, 0, 0, 0, 0.1, 0, 0, 0, 0.15, 0, 1, 0)
-material_override = ExtResource("2_83dcw")
-mesh = SubResource("BoxMesh_hun61")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Frame/MeshInstance3D4" unique_id=1420032691]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Frame/MeshInstance3D4/StaticBody3D" unique_id=1429925122]
-shape = SubResource("ConcavePolygonShape3D_q5w8r")
-
-[node name="Hinge" type="Node3D" parent="." unique_id=1572860602]
-transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, -0.5, 0, 0)
-
-[node name="DoorPanel" type="Node3D" parent="Hinge" unique_id=362659113]
-
-[node name="DoorMesh" type="MeshInstance3D" parent="Hinge/DoorPanel" unique_id=1259687077]
-transform = Transform3D(0.9121956, 0, 0, 0, 1.9057524, 0, 0, 0, 0.100000046, 0.509773, 0, 0)
-material_override = ExtResource("1_uvdjg")
-mesh = SubResource("BoxMesh_hun61")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Hinge/DoorPanel/DoorMesh" unique_id=755253461]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hinge/DoorPanel/DoorMesh/StaticBody3D" unique_id=1519645459]
-shape = SubResource("ConcavePolygonShape3D_t58dd")
-
-[node name="Knob" type="Node3D" parent="Hinge/DoorPanel" unique_id=460789494]
-
-[node name="MetalPlate" type="MeshInstance3D" parent="Hinge/DoorPanel/Knob" unique_id=488090585]
-transform = Transform3D(0.15576899, 0, 0, 0, 0.31584325, 0, 0, 0, 0.15576899, 0.7871032, -0.11136596, 0)
-material_override = ExtResource("3_83dcw")
-mesh = SubResource("BoxMesh_uvdjg")
-
-[node name="MetalPlate2" type="MeshInstance3D" parent="Hinge/DoorPanel/Knob" unique_id=1287350760]
-transform = Transform3D(0.036696326, 0, 0, 0, -5.6986567e-09, -0.035776332, 0, 0.13037002, -1.5638333e-09, 0.7871032, -0.048252214, 0)
-material_override = ExtResource("3_83dcw")
-mesh = SubResource("CylinderMesh_la1wf")
-
-[node name="MetalPlate3" type="MeshInstance3D" parent="Hinge/DoorPanel/Knob" unique_id=1157687288]
-transform = Transform3D(0.09768169, 0, 0, 0, 0.101685874, 0, 0, 0, 0.08043682, 0.7871032, -0.048252217, 0.15201169)
-material_override = ExtResource("3_83dcw")
-mesh = SubResource("SphereMesh_18pbm")
-
-[node name="MetalPlate4" type="MeshInstance3D" parent="Hinge/DoorPanel/Knob" unique_id=1725842860]
-transform = Transform3D(0.097681694, 0, 0, 0, 0.10168588, 0, 0, 0, 0.08043682, 0.7871032, -0.04825222, -0.1603497)
-material_override = ExtResource("3_83dcw")
-mesh = SubResource("SphereMesh_q5w8r")
-
-[node name="KeyHole" type="MeshInstance3D" parent="Hinge/DoorPanel/Knob" unique_id=1796653657]
-transform = Transform3D(0.03649922, 0, 0, 0, 0.06366907, 0, 0, 0, 0.1506041, 0.7871032, -0.20138605, 0.005099774)
-material_override = ExtResource("4_la1wf")
-mesh = SubResource("PrismMesh_18pbm")
-
-[node name="KeyHole2" type="MeshInstance3D" parent="Hinge/DoorPanel/Knob" unique_id=1080815753]
-transform = Transform3D(0.026237644, 0, 0, 0, -2.9313503e-09, -0.031071933, 0, 0.06706145, -1.3581971e-09, 0.7871032, -0.17836635, 0.013458686)
-material_override = ExtResource("4_la1wf")
-mesh = SubResource("CylinderMesh_q5w8r")
-
-[node name="KnobTrigger" type="Area3D" parent="Hinge/DoorPanel/Knob" unique_id=797650364 groups=["interactable"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.769575, 0, 0)
-script = ExtResource("6_q5w8r")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hinge/DoorPanel/Knob/KnobTrigger" unique_id=2075760227]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016357422, -0.081695646, -0.019912736)
-shape = SubResource("BoxShape3D_la1wf")
-
-[node name="UnlockTrigger" type="Area3D" parent="Hinge/DoorPanel/Knob" unique_id=1549570123]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.769575, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hinge/DoorPanel/Knob/UnlockTrigger" unique_id=1389843929]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016357422, -0.18827829, 0.03689192)
-shape = SubResource("BoxShape3D_kgbum")
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1265134416]
 libraries/ = SubResource("AnimationLibrary_q5w8r")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=642714018]
 stream = ExtResource("7_t58dd")
+
+[node name="FrameMesh" type="MeshInstance3D" parent="." unique_id=595389858]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="FrameMesh" unique_id=342000831]
+transform = Transform3D(0.106, 0, 0, 0, 2, 0, 0, 0, 0.15, -0.5, 0, 0)
+material_override = ExtResource("2_83dcw")
+mesh = SubResource("BoxMesh_hun61")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="FrameMesh/MeshInstance3D2" unique_id=1262966916]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FrameMesh/MeshInstance3D2/StaticBody3D" unique_id=1369914367]
+shape = SubResource("ConcavePolygonShape3D_la1wf")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="FrameMesh" unique_id=1820464721]
+transform = Transform3D(0.106, 0, 0, 0, 2, 0, 0, 0, 0.15, 0.5, 0, 0)
+material_override = ExtResource("2_83dcw")
+mesh = SubResource("BoxMesh_hun61")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="FrameMesh/MeshInstance3D3" unique_id=241617813]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FrameMesh/MeshInstance3D3/StaticBody3D" unique_id=1222823774]
+shape = SubResource("ConcavePolygonShape3D_18pbm")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="FrameMesh" unique_id=1126845634]
+transform = Transform3D(1.1, 0, 0, 0, 0.1, 0, 0, 0, 0.15, 0, 1, 0)
+material_override = ExtResource("2_83dcw")
+mesh = SubResource("BoxMesh_hun61")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="FrameMesh/MeshInstance3D4" unique_id=1420032691]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FrameMesh/MeshInstance3D4/StaticBody3D" unique_id=1429925122]
+shape = SubResource("ConcavePolygonShape3D_q5w8r")
+
+[node name="Hinge" type="Node3D" parent="." unique_id=1572860602]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, -0.5, 0, 0)
+
+[node name="Panel" type="Node3D" parent="Hinge" unique_id=362659113]
+
+[node name="Knob" type="Node3D" parent="Hinge/Panel" unique_id=460789494]
+
+[node name="KnobTrigger" type="Area3D" parent="Hinge/Panel/Knob" unique_id=797650364 groups=["interactable"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.769575, 0, 0)
+script = ExtResource("6_q5w8r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hinge/Panel/Knob/KnobTrigger" unique_id=2075760227]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016357422, -0.081695646, -0.019912736)
+shape = SubResource("BoxShape3D_la1wf")
+
+[node name="UnlockTrigger" type="Area3D" parent="Hinge/Panel/Knob" unique_id=1549570123]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.769575, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hinge/Panel/Knob/UnlockTrigger" unique_id=1389843929]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016357422, -0.18827829, 0.03689192)
+shape = SubResource("BoxShape3D_kgbum")
+
+[node name="KnobMesh" type="MeshInstance3D" parent="Hinge/Panel/Knob" unique_id=1570644424]
+
+[node name="MetalPlate" type="MeshInstance3D" parent="Hinge/Panel/Knob/KnobMesh" unique_id=488090585]
+transform = Transform3D(0.15576899, 0, 0, 0, 0.31584325, 0, 0, 0, 0.15576899, 0.7871032, -0.11136596, 0)
+material_override = ExtResource("3_83dcw")
+mesh = SubResource("BoxMesh_uvdjg")
+
+[node name="MetalPlate2" type="MeshInstance3D" parent="Hinge/Panel/Knob/KnobMesh" unique_id=1287350760]
+transform = Transform3D(0.036696326, 0, 0, 0, -5.6986567e-09, -0.035776332, 0, 0.13037002, -1.5638333e-09, 0.7871032, -0.048252214, 0)
+material_override = ExtResource("3_83dcw")
+mesh = SubResource("CylinderMesh_la1wf")
+
+[node name="MetalPlate3" type="MeshInstance3D" parent="Hinge/Panel/Knob/KnobMesh" unique_id=1157687288]
+transform = Transform3D(0.09768169, 0, 0, 0, 0.101685874, 0, 0, 0, 0.08043682, 0.7871032, -0.048252217, 0.15201169)
+material_override = ExtResource("3_83dcw")
+mesh = SubResource("SphereMesh_18pbm")
+
+[node name="MetalPlate4" type="MeshInstance3D" parent="Hinge/Panel/Knob/KnobMesh" unique_id=1725842860]
+transform = Transform3D(0.097681694, 0, 0, 0, 0.10168588, 0, 0, 0, 0.08043682, 0.7871032, -0.04825222, -0.1603497)
+material_override = ExtResource("3_83dcw")
+mesh = SubResource("SphereMesh_q5w8r")
+
+[node name="KeyHole" type="MeshInstance3D" parent="Hinge/Panel/Knob/KnobMesh" unique_id=1796653657]
+transform = Transform3D(0.03649922, 0, 0, 0, 0.06366907, 0, 0, 0, 0.1506041, 0.7871032, -0.20138605, 0.005099774)
+material_override = ExtResource("4_la1wf")
+mesh = SubResource("PrismMesh_18pbm")
+
+[node name="KeyHole2" type="MeshInstance3D" parent="Hinge/Panel/Knob/KnobMesh" unique_id=1080815753]
+transform = Transform3D(0.026237644, 0, 0, 0, -2.9313503e-09, -0.031071933, 0, 0.06706145, -1.3581971e-09, 0.7871032, -0.17836635, 0.013458686)
+material_override = ExtResource("4_la1wf")
+mesh = SubResource("CylinderMesh_q5w8r")
+
+[node name="PanelMesh" type="MeshInstance3D" parent="Hinge/Panel" unique_id=1259687077]
+transform = Transform3D(0.9121956, 0, 0, 0, 1.9057524, 0, 0, 0, 0.100000046, 0.509773, 0, 0)
+material_override = ExtResource("1_uvdjg")
+mesh = SubResource("BoxMesh_hun61")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hinge/Panel/PanelMesh" unique_id=755253461]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hinge/Panel/PanelMesh/StaticBody3D" unique_id=1519645459]
+shape = SubResource("ConcavePolygonShape3D_t58dd")
 
 [node name="CameraMarker" type="Marker3D" parent="." unique_id=492505630]
 transform = Transform3D(0.42100942, 0.0695556, -0.90438545, 0, 0.99705553, 0.07668278, 0.9070563, -0.032284174, 0.41976976, -0.2501749, -0.018066209, 0.7045134)
@@ -251,8 +253,8 @@ collision_layer = 5
 collision_mask = 5
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MousePlane" unique_id=1381915958]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(-4.371139e-09, -0.1, 0, 0.1, -4.371139e-09, 0, 0, 0, 0.1, 0, 0, 0)
 shape = SubResource("WorldBoundaryShape3D_kgbum")
 
-[connection signal="interact" from="Hinge/DoorPanel/Knob/KnobTrigger" to="." method="_on_knob_trigger_interact"]
-[connection signal="area_entered" from="Hinge/DoorPanel/Knob/UnlockTrigger" to="." method="_on_unlock_trigger_area_entered"]
+[connection signal="interact" from="Hinge/Panel/Knob/KnobTrigger" to="." method="_on_knob_trigger_interact"]
+[connection signal="area_entered" from="Hinge/Panel/Knob/UnlockTrigger" to="." method="_on_unlock_trigger_area_entered"]
