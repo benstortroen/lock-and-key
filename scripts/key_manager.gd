@@ -125,15 +125,19 @@ func drag_to_mouse(delta):
 func unlock_anim(key_marker: Marker3D):
 	# TODO: prevent early unequip which causes crash
 	var unlocking_key = key_grabbed
-	unlocking_key.freeze = true
 	unequip_key()
+	
+	# start unlock animation
+	unlocking_key.freeze = true
 	var tween = create_tween()
-	tween.tween_property(unlocking_key, "global_transform", key_marker.global_transform, 0.5).set_trans(Tween.TRANS_CIRC)
-	tween.tween_property(unlocking_key, "global_transform", key_marker.global_transform, 0.75)
+	tween.tween_property(unlocking_key, "global_position", key_marker.global_position, 0.5).set_trans(Tween.TRANS_CIRC)
+	tween.tween_property(unlocking_key, "global_position", key_marker.global_position, 0.75)
 	tween.tween_property(unlocking_key, "rotation:x", deg_to_rad(-90), 0.5).set_trans(Tween.TRANS_SPRING)
 	await tween.finished
 	await get_tree().create_timer(0.5).timeout
-	unlocking_key.queue_free()
+	
+	# return key to keychain 
+	unlocking_key.freeze = false
 	end_minigame()
 
 
