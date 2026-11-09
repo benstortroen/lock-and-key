@@ -1,6 +1,7 @@
 extends Node3D
 
 var is_open = false
+@export var door_id : String
 @export var is_unlocked = false
 
 # animations and sounds
@@ -42,7 +43,7 @@ func _on_knob_trigger_interact() -> void:
 
 
 func _on_unlock_trigger_area_entered(area: Area3D) -> void:
-	if area.is_in_group("key") and !is_unlocked:
+	if area.is_in_group("key") and area.get_parent().key_id == door_id and !is_unlocked:
 		# TODO: unlock door
 		is_unlocked = true
 		audio_player.stream = sounds["door_unlock"]
@@ -52,3 +53,5 @@ func _on_unlock_trigger_area_entered(area: Area3D) -> void:
 		var player = get_tree().get_first_node_in_group("player")
 		var key_manager = player.get_node("KeyManager")
 		key_manager.unlock_anim(key_marker)
+
+# TODO: fake unlock

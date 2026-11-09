@@ -719,6 +719,6 @@ autoplay = "default"
 speed_scale = 4.0
 
 [node name="Key" parent="." unique_id=525435798 instance=ExtResource("10_olg7q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27487087, 1.0414017, -1.020675)
+transform = Transform3D(0.9659258, 0.25881904, 1.131334e-08, 0, -4.371139e-08, 1, 0.25881904, -0.9659258, -4.222196e-08, -0.22404113, 0.8282628, -1.0828989)
 
 [editable path="Environment/Doors/Door4"]

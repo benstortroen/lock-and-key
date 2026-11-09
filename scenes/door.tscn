@@ -128,6 +128,7 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 
 [node name="Door" type="Node3D" unique_id=588366886]
 script = ExtResource("1_18pbm")
+door_id = "default"
 sounds = Dictionary[StringName, AudioStream]({
 &"door_close": ExtResource("8_ju5n0"),
 &"door_locked": ExtResource("4_kgbum"),

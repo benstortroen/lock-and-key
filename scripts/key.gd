@@ -1,5 +1,7 @@
 extends RigidBody3D
 
+@export var key_id : String
+
 var current_state: State = State.PICKUP # default to pickup
 enum State {
 	PICKUP,
@@ -9,6 +11,7 @@ enum State {
 }
 
 func _process(delta):
+	# TODO: this needs some polish
 	match current_state:
 		State.KEYRING:
 			freeze = false
