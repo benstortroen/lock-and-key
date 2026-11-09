@@ -3,13 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://xxxa0uur8iil" path="res://scenes/player.tscn" id="1_u52ul"]
 [ext_resource type="Texture2D" uid="uid://brap4n7muse73" path="res://assets/material.png" id="2_w7c3h"]
 [ext_resource type="PackedScene" uid="uid://duuraib7riiu7" path="res://scenes/door.tscn" id="3_w8frs"]
-[ext_resource type="PackedScene" uid="uid://cp6qh23kwg307" path="res://scenes/key_pickup.tscn" id="4_mx8sn"]
 [ext_resource type="Material" uid="uid://blys0ubd1fnwe" path="res://materials/gray.tres" id="4_olg7q"]
 [ext_resource type="Texture2D" uid="uid://b0xxqtmg8hbq7" path="res://assets/tutorial.png" id="5_klq6b"]
 [ext_resource type="Material" uid="uid://kbv8qm7piecy" path="res://materials/wood_1.tres" id="5_t1rx8"]
-[ext_resource type="Script" uid="uid://bf6v85p802y3n" path="res://scenes/keyring_pickup.gd" id="6_2r41h"]
 [ext_resource type="Material" uid="uid://bt680aahwq02t" path="res://materials/wood_2.tres" id="6_8iemx"]
 [ext_resource type="PackedScene" uid="uid://cc7ixbni8o01y" path="res://scenes/table.tscn" id="9_8iemx"]
+[ext_resource type="PackedScene" uid="uid://c86aa8klj5idg" path="res://scenes/key.tscn" id="10_olg7q"]
 [ext_resource type="Texture2D" uid="uid://bgyw5i3fq46fd" path="res://assets/jumpscare.png" id="11_t1rx8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5xgho"]
@@ -67,17 +66,6 @@ size = Vector3(0.2084961, 0.19070435, 0.20059967)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_v3why"]
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uy4su"]
-albedo_color = Color(0.96139616, 0.56346667, 0.65064174, 1)
-
-[sub_resource type="SphereMesh" id="SphereMesh_klq6b"]
-material = SubResource("StandardMaterial3D_uy4su")
-radial_segments = 4
-rings = 1
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_b121j"]
-data = PackedVector3Array(0, 0.5, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0, 0, 0, 0.5, 0, 0.5, 0, 0, 0.5, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0, -0.5, 0.5, 0, 0, 0, 0.5, 0, 0, 0.5, 0, 0, 0, -0.5, 0, 0.5, 0, -0.5, 0, 0, 0, 0, -0.5, 0, 0.5, 0, 0, 0.5, 0, -0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.5, 0, 0, 0, 0, 0.5, 0.5, 0, 0, 0, -0.5, 0, 0.5, 0, 0, 0, -0.5, 0, 0, -0.5, 0, 0.5, 0, 0, 0, 0, -0.5, 0, -0.5, 0, 0, 0, -0.5, 0, -0.5, 0, 0, -0.5, 0, 0, 0, -0.5, -0.5, 0, 0, 0, -0.5, 0, -0.5, 0, 0, 0, -0.5, 0, 0, -0.5, 0, -0.5, 0, 0, 0, 0, 0.5, 0, -0.5, 0, 0, 0, 0.5, 0, -0.5, 0, 0, -0.5, 0)
 
 [sub_resource type="BoxMesh" id="BoxMesh_mx8sn"]
 
@@ -416,28 +404,6 @@ shape = SubResource("ConcavePolygonShape3D_v3why")
 [node name="Pickups" type="Node3D" parent="Environment" unique_id=1504708719]
 transform = Transform3D(0.24999999, 0, 8.881784e-16, -6.617445e-24, 0.24999999, 0, 0, 2.220446e-16, 0.25, -1.4901161e-08, 5.9604645e-08, 0)
 
-[node name="KeyPickup" parent="Environment/Pickups" unique_id=984102319 instance=ExtResource("4_mx8sn")]
-transform = Transform3D(2.828427, 2.828427, 1.2363448e-07, 0, -1.7484555e-07, 4, 2.828427, -2.828427, -1.2363448e-07, -1.4954216, 3.1859574, -6.0394287)
-
-[node name="KeyPickup2" parent="Environment/Pickups" unique_id=869496374 instance=ExtResource("4_mx8sn")]
-transform = Transform3D(2.828427, 2.828427, 1.2363448e-07, 0, -1.7484555e-07, 4, 2.828427, -2.828427, -1.2363448e-07, -16.820953, 3.1859574, -76.9665)
-
-[node name="KeyPickup3" parent="Environment/Pickups" unique_id=1763800616 instance=ExtResource("4_mx8sn")]
-transform = Transform3D(2.828427, 2.828427, 1.2363448e-07, 0, -1.7484555e-07, 4, 2.828427, -2.828427, -1.2363448e-07, 0.17042923, 3.1859574, -105.26475)
-
-[node name="KeyPickup4" parent="Environment/Pickups" unique_id=1401736545 instance=ExtResource("4_mx8sn")]
-transform = Transform3D(-8.470329e-22, 0, 3.9999998, 8.4703295e-22, 3.9999998, -2.842171e-14, -3.9999995, 3.7024977e-29, -1.4210855e-14, 27.384394, 9.730089, -93.08251)
-
-[node name="KeyringPickup" type="MeshInstance3D" parent="Environment/Pickups" unique_id=1440847907]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1286825, 3.962976, -4.225984)
-mesh = SubResource("SphereMesh_klq6b")
-
-[node name="StaticBody3D" type="Area3D" parent="Environment/Pickups/KeyringPickup" unique_id=1378249698 groups=["interactable"]]
-script = ExtResource("6_2r41h")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Pickups/KeyringPickup/StaticBody3D" unique_id=862456643 groups=["interactable"]]
-shape = SubResource("ConcavePolygonShape3D_b121j")
-
 [node name="Rooms" type="Node3D" parent="Environment" unique_id=1571168588]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Rooms" unique_id=201977115]
@@ -752,6 +718,7 @@ sprite_frames = SubResource("SpriteFrames_xy2fk")
 autoplay = "default"
 speed_scale = 4.0
 
-[connection signal="interact" from="Environment/Pickups/KeyringPickup/StaticBody3D" to="Environment/Pickups/KeyringPickup/StaticBody3D" method="_on_interact"]
+[node name="Key" parent="." unique_id=525435798 instance=ExtResource("10_olg7q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27487087, 1.0414017, -1.020675)
 
 [editable path="Environment/Doors/Door4"]

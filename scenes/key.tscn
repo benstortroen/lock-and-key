@@ -2,15 +2,16 @@
 
 [ext_resource type="Script" uid="uid://bd27qw83ry66v" path="res://scripts/key.gd" id="1_fttkb"]
 [ext_resource type="Material" uid="uid://ckyei4n5wxkfx" path="res://materials/gold.tres" id="1_q6jxy"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_wy8tx"]
-size = Vector3(0.1059618, 0.31658936, 0.027496338)
+[ext_resource type="Script" uid="uid://dwbhxkf16h48x" path="res://scenes/key_pickup_area.gd" id="3_wy8tx"]
 
 [sub_resource type="TorusMesh" id="TorusMesh_uvrdt"]
 inner_radius = 0.4
 outer_radius = 0.6
 
 [sub_resource type="BoxMesh" id="BoxMesh_q6jxy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wy8tx"]
+size = Vector3(0.1059618, 0.31658936, 0.027496338)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fttkb"]
 size = Vector3(0.08282471, 0.10241699, 0.050231934)
@@ -22,10 +23,6 @@ center_of_mass_mode = 1
 center_of_mass = Vector3(0, -0.2, 0)
 angular_damp = 10.0
 script = ExtResource("1_fttkb")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2120776747]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0009856224, -0.102508545, -1.5258789e-05)
-shape = SubResource("BoxShape3D_wy8tx")
 
 [node name="KeyMesh" type="Node3D" parent="." unique_id=1794988356]
 
@@ -49,10 +46,22 @@ transform = Transform3D(0.04803225, 0, 0, 0, -7.339797e-10, -0.0396317, 0, 0.016
 material_override = ExtResource("1_q6jxy")
 mesh = SubResource("BoxMesh_q6jxy")
 
-[node name="UnlockTrigger" type="Area3D" parent="." unique_id=315926925 groups=["key"]]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2120776747]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0009856224, -0.102508545, -1.5258789e-05)
+shape = SubResource("BoxShape3D_wy8tx")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="UnlockTrigger" unique_id=10840684]
+[node name="UnlockArea" type="Area3D" parent="." unique_id=315926925 groups=["key"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="UnlockArea" unique_id=10840684]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.030853271, -0.21612549, 0.021636963)
 shape = SubResource("BoxShape3D_fttkb")
 
+[node name="PickupArea" type="Area3D" parent="." unique_id=566667060 groups=["interactable"]]
+script = ExtResource("3_wy8tx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PickupArea" unique_id=1377840013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0009856224, -0.102508545, -1.5258789e-05)
+shape = SubResource("BoxShape3D_wy8tx")
+
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="interact" from="PickupArea" to="." method="_on_pickup_area_interact"]

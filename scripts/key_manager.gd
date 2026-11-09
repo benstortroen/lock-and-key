@@ -1,11 +1,10 @@
 extends Node3D
-#  Manage keyring equip state and unlock minigame
 
-var has_keyring = false
+# Manage keyring states 
 var is_equipped = false
 var in_minigame = false
 
-# nodes
+# Nodes
 @export var keyring_rig : Node3D
 @onready var camera : Camera3D = get_tree().get_first_node_in_group("player").get_node("Camera3D")
 var _knob_marker : Node3D
@@ -16,7 +15,7 @@ var reset_cam_rotation = Vector3.ZERO
 
 func _process(delta):
 	# Toggle keyring equip
-	if has_keyring and Input.is_action_just_pressed("toggle_keyring"):
+	if Input.is_action_just_pressed("toggle_keyring"):
 		is_equipped = !is_equipped
 		print("Is Equipped: " + str (is_equipped) + " " + Time.get_time_string_from_system())
 		keyring_rig.play_equip_anim(is_equipped)
@@ -81,13 +80,19 @@ func end_minigame():
 # ==============================================================================
 # Handle Item Pickups
 
-func add_keyring():
-	has_keyring = true
-
-func add_key():
+func add_key(key: Node3D):
 	var keyring = keyring_rig.get_node("Keyring")
-	var key_instance = preload("res://scenes/attached_key.tscn").instantiate() 
-	keyring.add_child(key_instance)
+	var pin_joint = PinJoint3D.new()
+	
+	
+	# attach key to keyring
+	# TODO: add line3D for chain
+	keyring.add_child(pin_joint)
+	key.reparent(pin_joint, false)
+	key.transform = Transform3D()
+	key.position.y = -0.1
+	pin_joint.node_a = keyring.get_path()
+	pin_joint.node_b = key.get_path()
 	
 # ==============================================================================
 # Key Drag Functions
