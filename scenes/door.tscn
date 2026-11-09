@@ -92,15 +92,6 @@ _data = {
 
 [sub_resource type="BoxMesh" id="BoxMesh_hun61"]
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_la1wf"]
-data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_18pbm"]
-data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_q5w8r"]
-data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_la1wf"]
 size = Vector3(0.93200684, 1.8748322, 0.38467407)
 
@@ -136,6 +127,10 @@ sounds = Dictionary[StringName, AudioStream]({
 &"door_unlock": ExtResource("5_ey00f")
 })
 
+[node name="NavigationObstacle3D2" type="NavigationObstacle3D" parent="." unique_id=1185600053]
+transform = Transform3D(0.9121954, 0, 0, 0, 1.9057522, 0, 0, 0, 0.10000003, -0.47325498, -0.96675426, -0.054926097)
+vertices = PackedVector3Array(1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1)
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1265134416]
 libraries/ = SubResource("AnimationLibrary_q5w8r")
 
@@ -149,30 +144,15 @@ transform = Transform3D(0.106, 0, 0, 0, 2, 0, 0, 0, 0.15, -0.5, 0, 0)
 material_override = ExtResource("2_83dcw")
 mesh = SubResource("BoxMesh_hun61")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="FrameMesh/MeshInstance3D2" unique_id=1262966916]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="FrameMesh/MeshInstance3D2/StaticBody3D" unique_id=1369914367]
-shape = SubResource("ConcavePolygonShape3D_la1wf")
-
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="FrameMesh" unique_id=1820464721]
 transform = Transform3D(0.106, 0, 0, 0, 2, 0, 0, 0, 0.15, 0.5, 0, 0)
 material_override = ExtResource("2_83dcw")
 mesh = SubResource("BoxMesh_hun61")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="FrameMesh/MeshInstance3D3" unique_id=241617813]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="FrameMesh/MeshInstance3D3/StaticBody3D" unique_id=1222823774]
-shape = SubResource("ConcavePolygonShape3D_18pbm")
-
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="FrameMesh" unique_id=1126845634]
 transform = Transform3D(1.1, 0, 0, 0, 0.1, 0, 0, 0, 0.15, 0, 1, 0)
 material_override = ExtResource("2_83dcw")
 mesh = SubResource("BoxMesh_hun61")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="FrameMesh/MeshInstance3D4" unique_id=1420032691]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="FrameMesh/MeshInstance3D4/StaticBody3D" unique_id=1429925122]
-shape = SubResource("ConcavePolygonShape3D_q5w8r")
 
 [node name="Hinge" type="Node3D" parent="." unique_id=1572860602]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, -0.5, 0, 0)
@@ -232,6 +212,10 @@ mesh = SubResource("CylinderMesh_q5w8r")
 transform = Transform3D(0.9121956, 0, 0, 0, 1.9057524, 0, 0, 0, 0.100000046, 0.5, 0, 0)
 material_override = ExtResource("1_uvdjg")
 mesh = SubResource("BoxMesh_pg2b6")
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="Hinge/Panel/PanelMesh" unique_id=117892542]
+transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 1, -0.51880866, -0.50728226, -0.5492608)
+vertices = PackedVector3Array(1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Hinge/Panel/PanelMesh" unique_id=755253461]
 

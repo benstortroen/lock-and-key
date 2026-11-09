@@ -41,17 +41,26 @@ func _on_knob_trigger_interact() -> void:
 		audio_player.play(0.5)
 		is_open = true
 
-
+# Unlock Logic
 func _on_unlock_trigger_area_entered(area: Area3D) -> void:
-	if area.is_in_group("key") and area.get_parent().key_id == door_id and !is_unlocked:
-		# TODO: unlock door
-		is_unlocked = true
-		audio_player.stream = sounds["door_unlock"]
-		audio_player.play()
+	# is key entering the lock?
+	if area.is_in_group("key") and !is_unlocked:
 		
-		# TODO: play key unlock anim
+		var key = area.get_parent()
 		var player = get_tree().get_first_node_in_group("player")
 		var key_manager = player.get_node("KeyManager")
-		key_manager.unlock_anim(key_marker)
-
-# TODO: fake unlock
+		
+		# successful unlock
+		if area.get_parent().key_id == door_id:
+			# unlock door
+			is_unlocked = true
+			audio_player.stream = sounds["door_unlock"]
+			audio_player.play()
+		
+			# play key unlock anim
+			key_manager.unlock_anim(key, key_marker, true)
+		
+		# unsuccessful unlock
+		else:
+			# TODO: play unsuccessful unlock audio
+			key_manager.unlock_anim(key, key_marker, false)

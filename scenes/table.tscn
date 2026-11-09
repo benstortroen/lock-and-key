@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cc7ixbni8o01y"]
 
-[ext_resource type="PackedScene" uid="uid://ddvtof04y4ode" path="res://models/Square Tea Table Friendly Welcome/SquareTeaTableFriendlyWelcome.fbx" id="1_02ppr"]
+[ext_resource type="PackedScene" uid="uid://ddvtof04y4ode" path="res://models/table/SquareTeaTableFriendlyWelcome.fbx" id="1_02ppr"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i3nyy"]
 size = Vector3(1.1933289, 0.7512512, 1.1973267)

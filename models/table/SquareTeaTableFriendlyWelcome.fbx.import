@@ -4,18 +4,20 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ddvtof04y4ode"
-path="res://.godot/imported/SquareTeaTableFriendlyWelcome.fbx-8c23ac9e4b3a673bfd9a38ada2d4620a.scn"
+path="res://.godot/imported/SquareTeaTableFriendlyWelcome.fbx-08d3eb1238afe6ddf5a7542ac20d5a2a.scn"
 
 [deps]
 
-source_file="res://models/Square Tea Table Friendly Welcome/SquareTeaTableFriendlyWelcome.fbx"
-dest_files=["res://.godot/imported/SquareTeaTableFriendlyWelcome.fbx-8c23ac9e4b3a673bfd9a38ada2d4620a.scn"]
+source_file="res://models/table/SquareTeaTableFriendlyWelcome.fbx"
+dest_files=["res://.godot/imported/SquareTeaTableFriendlyWelcome.fbx-08d3eb1238afe6ddf5a7542ac20d5a2a.scn"]
 
 [params]
 
 nodes/root_type=""
 nodes/root_name=""
 nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false

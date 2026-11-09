@@ -90,6 +90,7 @@ func add_key(key: Node3D):
 	keyring.add_child(pin_joint)
 	key.reparent(pin_joint, false)
 	key.transform = Transform3D()
+	key.scale = Vector3(0.75, 0.75, 0.75) # shrink key
 	key.position.y = -0.1
 	pin_joint.node_a = keyring.get_path()
 	pin_joint.node_b = key.get_path()
@@ -127,23 +128,31 @@ func drag_to_mouse(delta):
 		key_grabbed.global_position = key_grabbed.global_position.move_toward(cursor_position, delta * 3)
 		align_key_to_knob()
 		
-func unlock_anim(key_marker: Marker3D):
-	# TODO: prevent early unequip which causes crash
-	var unlocking_key = key_grabbed
+# TODO: rename to try_unlock
+func unlock_anim(key: Node3D, key_marker: Marker3D, was_successful: bool):
+	# stop moving grabbed key
 	unequip_key()
 	
 	# start unlock animation
-	unlocking_key.freeze = true
+	key.freeze = true
 	var tween = create_tween()
-	tween.tween_property(unlocking_key, "global_position", key_marker.global_position, 0.5).set_trans(Tween.TRANS_CIRC)
-	tween.tween_property(unlocking_key, "global_position", key_marker.global_position, 0.75)
-	tween.tween_property(unlocking_key, "rotation:x", deg_to_rad(-90), 0.5).set_trans(Tween.TRANS_SPRING)
+	tween.tween_property(key, "global_position", key_marker.global_position, 0.5).set_trans(Tween.TRANS_CIRC)
+	tween.tween_property(key, "global_position", key_marker.global_position, 0.75)
+	
+	# TODO: play different animation if key unlock was successful
+	if was_successful:
+		tween.tween_property(key, "rotation:x", deg_to_rad(-90), 0.5).set_trans(Tween.TRANS_SPRING)
+	else:
+		tween.tween_property(key, "rotation:x", deg_to_rad(-15), 0.1).set_trans(Tween.TRANS_SPRING)
+		tween.tween_property(key, "rotation:x", deg_to_rad(15), 0.1).set_trans(Tween.TRANS_SPRING)
+		tween.tween_property(key, "rotation:x", deg_to_rad(0), 0.1).set_trans(Tween.TRANS_SPRING)
+	
+	# reset key and camera
 	await tween.finished
 	await get_tree().create_timer(0.5).timeout
-	
-	# return key to keychain 
-	unlocking_key.freeze = false
-	end_minigame()
+	key.freeze = false # return key to keychain 
+	await get_tree().create_timer(0.25).timeout
+	if was_successful: end_minigame()
 
 
 # grabbed function

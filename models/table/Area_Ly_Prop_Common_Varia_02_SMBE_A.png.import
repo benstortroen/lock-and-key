@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ceu44rlafvlcs"
-path="res://.godot/imported/Area_Ly_Prop_Common_Varia_02_Normal_B.png-e8d931f35a93f19ec0913e572db7a311.ctex"
+uid="uid://202hu878lohi"
+path="res://.godot/imported/Area_Ly_Prop_Common_Varia_02_SMBE_A.png-9be1cfe2c74985b9634930ef9a0dafbe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://models/Square Tea Table Friendly Welcome/Area_Ly_Prop_Common_Varia_02_Normal_B.png"
-dest_files=["res://.godot/imported/Area_Ly_Prop_Common_Varia_02_Normal_B.png-e8d931f35a93f19ec0913e572db7a311.ctex"]
+source_file="res://models/table/Area_Ly_Prop_Common_Varia_02_SMBE_A.png"
+dest_files=["res://.godot/imported/Area_Ly_Prop_Common_Varia_02_SMBE_A.png-9be1cfe2c74985b9634930ef9a0dafbe.ctex"]
 
 [params]
 

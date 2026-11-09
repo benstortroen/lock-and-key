@@ -10,13 +10,20 @@ enum State {
 	UNLOCKING
 }
 
-func _process(delta):
-	# TODO: this needs some polish
+func _ready():
+	# prevent rigidbody physics for pickup
+	if current_state == State.PICKUP:
+		freeze = true
+		
+
+func _process(delta: float) -> void:
 	match current_state:
-		State.KEYRING:
-			freeze = false
+		State.PICKUP:
+			# freeze = true
+			pass
 		_:
-			freeze = true
+			# freeze = false
+			pass
 
 # ==============================================================================
 # STATE: KEYRING 
@@ -43,3 +50,4 @@ func _on_pickup_area_interact() -> void:
 	var key_manager = player.get_node("KeyManager")
 	key_manager.add_key(self)
 	current_state = State.KEYRING
+	freeze = false
